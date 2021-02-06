@@ -28,13 +28,29 @@
 --
 -- # The LOCATION Concept
 -- 
---  TODO: Concept
+--  The LOCATION class contains locations and boundries of things like countries, states/provs, cities, bridges, ports, etc.
+--  It will also keep track of locations coalition , damage state, etc.
+--
 -- 
 -- @field #LOCATION
 LOCATION = {
     ClassName       = "LOCATION"
+    Type            = nil
   }
   
+--- Location type.
+-- @type LOCATION.Type
+-- @field #string POPULATION Location is a city, town, village, etc.
+-- @field #string STRATEGIC Location is a strategic target
+-- @field #string PORT Location is a sea port
+LOCATION.Type={
+  COUNTRY="country",
+  PROVINCE="province",
+  POPULATION="population",
+  STRATEGIC="strategic",
+  PORT="port",
+}
+
   --- Location version.
   -- @field #string version
   LOCATION.version="0.0.1"
@@ -43,7 +59,7 @@ LOCATION = {
   -- TODO list
   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   
-  -- TODO: Everything
+  -- TODO: Determine location types
   
   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   -- Constructor

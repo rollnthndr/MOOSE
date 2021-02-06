@@ -35,6 +35,17 @@ POPULATIONS = {
     ClassName       = "POPULATIONS"
   }
   
+--- Population types.
+-- @type POPULATION.Type
+-- @field #string CITY Population is a city.
+-- @field #string TOWN Population is a town.
+-- @field #string VILLAGE Population is a village.
+POPULATIONS.Type={
+  CITY="city",
+  TOWN="town",
+  VILLAGE="village",
+}
+
   --- Populations version.
   -- @field #string version
   POPULATIONS.version="0.0.1"
@@ -43,7 +54,7 @@ POPULATIONS = {
   -- TODO list
   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   
-  -- TODO: Everything
+  -- TODO: Determine population types
   
   -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   -- Constructor
